@@ -1,0 +1,49 @@
+.item_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+
+  p {
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+}
+
+.item_container:hover {
+  background: rgba(214, 214, 214, 0.979);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  text-transform: capitalize;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+  padding: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+}

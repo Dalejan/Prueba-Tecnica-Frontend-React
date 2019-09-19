@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import './style.scss';
+import React, { Component } from "react";
+import "./style.scss";
+
+//Rutas
+import { BrowserRouter } from "react-router-dom";
+import appRoutes from "./routes/app";
+import AppRouter from "./AppRouter";
 
 class App extends Component {
-  constructor() { 
-    super();
-  }
-
   render() {
     return (
-      <div>
-        <p>
-          Start editing to see some magic happen :)
-        </p>
-      </div>
+      <BrowserRouter>
+        <AppRouter routes={appRoutes} />
+      </BrowserRouter>
     );
   }
 }
